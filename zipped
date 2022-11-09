@@ -1,0 +1,5 @@
+n,x = map(int, input().split())
+temp = [map(float,input().split()) for p in range(x)]
+
+for i in zip(*temp):
+    print(sum(i)/x)
